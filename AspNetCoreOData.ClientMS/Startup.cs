@@ -39,8 +39,8 @@ namespace AspNetCoreOData.ClientMS
                 options.SignInScheme = "Cookies";
                 options.Authority = "https://localhost:44318";
                 options.RequireHttpsMetadata = true;
-                options.ClientId = "AspNetCoreODataClient";
-                options.ClientSecret = "AspNetCoreODataClientSecret";
+                options.ClientId = "AspNetCoreODataClientMS";
+                options.ClientSecret = "AspNetCoreODataClientSecretMS";
                 options.ResponseType = "code id_token";
                 options.Scope.Add("ScopeAspNetCoreODataServiceApi");
                 options.Scope.Add("profile");
