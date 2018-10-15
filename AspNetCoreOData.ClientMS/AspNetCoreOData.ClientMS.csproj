@@ -10,6 +10,7 @@
     <PackageReference Include="IdentityModel" Version="3.10.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0-preview2-35157" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.OData.Client" Version="7.5.1" />
   </ItemGroup>
 
 </Project>
