@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using AspNetCoreOData.ClientMS.Models;
 using Microsoft.AspNetCore.Authentication;
 using System.Net.Http;
-using AspNetCoreOData.Service.Database;
 using Microsoft.AspNetCore.Authorization;
+using AspNetCoreOData.ClientMS;
 
 namespace AspNetCoreOData.ClientMS.Controllers
 {
@@ -18,6 +18,10 @@ namespace AspNetCoreOData.ClientMS.Controllers
         public async Task<IActionResult> Index()
         {
             var accessToken = HttpContext.GetTokenAsync("access_token").Result;
+
+            //Default.Container container = new Default.Container(new Uri("https://localhost:44345/odata"));
+            //var item = container.Person.Count();
+
             //var client = new ODataClient(SetODataToken("https://localhost:44345/odata", accessToken));
             //var client = new ODataClient("https://localhost:44345/odata");
 
@@ -26,7 +30,7 @@ namespace AspNetCoreOData.ClientMS.Controllers
             //        .Top(7).Skip(7)
             //        .FindEntriesAsync();
 
-            return View(new List<Person>());
+            return View();
         }
 
         //private ODataClientSettings SetODataToken(string url, string accessToken)

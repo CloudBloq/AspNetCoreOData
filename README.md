@@ -22,6 +22,8 @@ https://blogs.msdn.microsoft.com/odatateam/2018/07/03/asp-net-core-odata-now-ava
 
 http://odata.github.io/
 
+https://blogs.msdn.microsoft.com/odatateam/2014/03/11/tutorial-sample-how-to-use-odata-client-code-generator-to-generate-client-side-proxy-class/
+
 http://azurecoder.net/2018/02/19/creating-odata-api-asp-net-core-2-0/
 
 https://dotnetthoughts.net/getting-started-with-odata-in-aspnet-core/
