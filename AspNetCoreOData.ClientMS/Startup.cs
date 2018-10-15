@@ -40,7 +40,7 @@ namespace AspNetCoreOData.ClientMS
                 options.Authority = "https://localhost:44318";
                 options.RequireHttpsMetadata = true;
                 options.ClientId = "AspNetCoreODataClientMS";
-                options.ClientSecret = "AspNetCoreODataClientSecretMS";
+                options.ClientSecret = "AspNetCoreODataClientMSSecret";
                 options.ResponseType = "code id_token";
                 options.Scope.Add("ScopeAspNetCoreODataServiceApi");
                 options.Scope.Add("profile");
