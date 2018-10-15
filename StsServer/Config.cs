@@ -75,6 +75,34 @@ namespace StsServerIdentity
                         "ScopeAspNetCoreODataServiceApi",
                         "role"
                     }
+                },
+                new Client
+                {
+                    ClientName = "AspNetCoreOData.ClientMS",
+                    ClientId = "AspNetCoreODataClientMS",
+                    ClientSecrets = {new Secret("AspNetCoreODataClientMSSecret".Sha256()) },
+                    AllowedGrantTypes = GrantTypes.Hybrid,
+                    AllowOfflineAccess = true,
+                    RequireConsent = true,
+                    AccessTokenLifetime = 86400,
+                    RedirectUris = {
+                        "https://localhost:44389/signin-oidc"
+                    },
+                    PostLogoutRedirectUris = {
+                        "https://localhost:44388/signout-callback-oidc"
+                    },
+                    AllowedCorsOrigins = new List<string>
+                    {
+                        "https://localhost:44389/"
+                    },
+                    AllowedScopes = new List<string>
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        IdentityServerConstants.StandardScopes.OfflineAccess,
+                        "ScopeAspNetCoreODataServiceApi",
+                        "role"
+                    }
                 }
             };
         }

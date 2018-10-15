@@ -1,6 +1,4 @@
-using System;
-
-namespace AspNetCoreOData.Client.Models
+namespace AspNetCoreOData.ClientMS.Models
 {
     public class ErrorViewModel
     {

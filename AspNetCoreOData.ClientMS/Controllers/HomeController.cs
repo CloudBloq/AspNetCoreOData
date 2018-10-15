@@ -4,14 +4,13 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using AspNetCoreOData.Client.Models;
+using AspNetCoreOData.ClientMS.Models;
 using Microsoft.AspNetCore.Authentication;
-using Simple.OData.Client;
 using System.Net.Http;
 using AspNetCoreOData.Service.Database;
 using Microsoft.AspNetCore.Authorization;
 
-namespace AspNetCoreOData.Client.Controllers
+namespace AspNetCoreOData.ClientMS.Controllers
 {
     [Authorize]
     public class HomeController : Controller

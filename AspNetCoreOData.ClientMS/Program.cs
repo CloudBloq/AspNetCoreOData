@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace AspNetCoreOData.Client
+namespace AspNetCoreOData.ClientMS
 {
     public class Program
     {

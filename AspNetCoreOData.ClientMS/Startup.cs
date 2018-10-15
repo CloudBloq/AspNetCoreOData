@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AspNetCoreOData.Client
+namespace AspNetCoreOData.ClientMS
 {
     public class Startup
     {
